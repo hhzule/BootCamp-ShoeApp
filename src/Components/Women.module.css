@@ -1,0 +1,221 @@
+.outerdiv1{
+    width: 200px;
+    height: 150px;
+    background-image: linear-gradient(to right top, #f0a1ce, #eb95db, #dfb2ec, #ccb5f3, #b5b5f0, #8aa7ec, #79b3f4, #88c7f1, #95d8f0, #a0dde9, #46eefa, #5ffbf1);
+    /* background: linear-gradient(90deg, #FF6F91, #F9F871); */
+    border-radius: 5%;
+    padding-left: 10px;
+}
+
+img{
+    width: 60%;
+
+    border-radius: 10%;
+    padding-right: 100px;
+    
+}
+.color{
+    background: linear-gradient(90deg, #b994f5, #e97ac7, #ee95aa, #f3ad93, #f3d294, #f3f38c);
+}
+.outerdiv{
+
+height: 200px;
+    align-items: 'flex-start';
+    /* paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(2), */
+    background-size: 200% !important;
+    background: linear-gradient(90deg, #b796ec, #ee8dd1, #f195aa, #f3ac92, #f3cf8b, #f7f79d);
+    animation: backgroundani 1s infinite;
+}
+
+
+.outerdiv{
+    animation: backgroundani 10s infinite;
+}
+.outerdiv a{
+    color: white;
+    margin: 0 10px;
+    font-size: 110%;
+    font-weight: 900;
+    text-decoration: none;
+    transition-property: all;
+    transition: 0.5s !important;
+
+}
+.outerdiv a:hover{
+    font-size: 120%;
+    transition-property: all;
+    transition: 0.5s !important;
+    text-decoration: underline;
+
+
+}
+.maindiv1{
+    text-align: center;
+    background-size: 200% !important;
+    background: linear-gradient(90deg, #f77794, #faa282 );
+    width: 300px;
+    padding-right: 100px;
+    padding-left: 35px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    margin: 1px 5px;
+    animation: backgroundani 2s infinite;
+    border-radius: 10px;
+    display: flex;
+    /* display: flex;
+    flex-direction: row;
+    position: relative; */
+    transition: ease-in;
+}
+
+.maindiv1a{
+    text-align: center;
+    background-size: 200% !important;
+    background: linear-gradient(90deg, #615457, #d6cdc9 );
+    width: 300px;
+    padding-right: 100px;
+    padding-left: 35px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    margin: 1px 5px;
+    animation: backgroundani 2s infinite;
+    border-radius: 10px;
+    display: flex;
+    /* display: flex;
+    flex-direction: row;
+    position: relative; */
+    transition: ease-in;
+}
+
+
+.maindiv1b{
+    text-align: center;
+    background-size: 200% !important;
+    background: linear-gradient(90deg, #fdd887, #f7a78a );
+    width: 300px;
+    padding-right: 100px;
+    padding-left: 35px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    margin: 1px 5px;
+    animation: backgroundani 2s infinite;
+    border-radius: 10px;
+    display: flex;
+    /* display: flex;
+    flex-direction: row;
+    position: relative; */
+    transition: ease-in;
+}
+
+
+
+.maindiv1:hover, .maindiv1a:hover, .maindiv1b:hover{
+    transition: ease-in;
+    animation: backgroundani 0.5s infinite !important;
+}
+
+@keyframes backgroundani{
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%; 
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+.main{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    
+
+}
+.maindiv2{
+    transform: translate(-500%, 10%);
+}
+.maindiv1 h2{
+    color: white;
+
+    filter: opacity(50%);
+    font-size: 30px !important;
+}
+/* .maindiv1{
+    padding: 10px;
+    width: 200%;
+    height: 200%;
+    padding: 50px;
+} */
+.maindiv1 img{
+    width: 190px;
+    height: 190px;
+}
+.head{
+    color: rgb(100, 98, 98);
+    text-align: center;
+}
+.para{
+    margin: 5% 10%;
+    line-height: 2rem;
+   
+}
+.textdiv{
+    margin: 30px 20px;
+    text-align: center;
+}
+.checkout{
+    background-color: rgba(0, 0, 0, 0.349) !important;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 120px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    margin-bottom: 120px;
+}
+.checkout *{
+    color: white;
+    padding-top: 70px;
+    margin: 0 auto;
+    text-align: center;
+
+
+}
+.footerdiv{
+
+        height: 100px;
+            align-items: 'flex-start';
+            /* paddingTop: theme.spacing(1),
+            paddingBottom: theme.spacing(2), */
+            background-size: 200% !important;
+            background: linear-gradient(90deg, #85817f, #a5a4a0, #fafaf7);
+            animation: backgroundani 1s infinite;
+}
+.footerdiv{
+    animation: backgroundani 10s infinite;
+}
+.footerdiv a{
+    color: rgb(107, 103, 103);
+    margin: 0 10px;
+    font-size: 110%;
+    font-weight: 900;
+    text-decoration: none;
+    transition-property: all;
+    transition: 0.5s !important;
+
+}
+.footerdiv a:hover{
+    font-size: 120%;
+    transition-property: all;
+    transition: 0.5s !important;
+    text-decoration: underline;
+  
+
+}
+.product{
+    margin: 10% 25% !important;
+
+}
