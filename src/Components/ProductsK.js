@@ -2,8 +2,8 @@ import React from 'react';
 import  { useParams } from 'react-router-dom';
  import data from '../data2.json';
  import styles from './Women.module.css'
- import { Grid, Button, Typography, Paper } from '@material-ui/core';
- import { AccessAlarm, ThreeDRotation } from '@material-ui/icons';
+ import { Button,Paper } from '@material-ui/core';
+
  
  
 function ProductsK() {

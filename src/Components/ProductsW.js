@@ -1,8 +1,7 @@
 import React from 'react';
 import  { useParams } from 'react-router-dom';
  import data from '../data.json';
- import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Button, Page, Typography, Paper } from '@material-ui/core';
+import { Button, Paper } from '@material-ui/core';
 import styles from './Women.module.css'
 
 

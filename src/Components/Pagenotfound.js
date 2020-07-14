@@ -1,6 +1,5 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Button, Page, Typography, Paper} from '@material-ui/core';
+import { Typography, Paper} from '@material-ui/core';
 import styles from './Women.module.css'
 import { Link } from 'react-router-dom';
 

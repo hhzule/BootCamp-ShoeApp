@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Button, Page, Typography,TextField, Paper} from '@material-ui/core';
+import {TextField, Paper} from '@material-ui/core';
 import styles from './Women.module.css'
 import { Link } from 'react-router-dom';
 
@@ -9,7 +9,6 @@ import { Link } from 'react-router-dom';
 const useStyles = makeStyles((theme) => ({
     root: {
       '& .MuiTextField-root': {
-        margin: theme.spacing(1),
         width: '25ch',
         display: 'flex',
         flexDirection: 'column',
