@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import data from './../data2.json';
+import data from './../data.json';
 import styles from './Women.module.css';
 import { makeStyles } from '@material-ui/core/styles';
 import { Card, Grid, CardActionArea, CardActions, Button, CardContent, CardMedia, Divider, Typography } from '@material-ui/core';
@@ -29,7 +29,7 @@ function Kid(){
     
     <div className={classes.root2}>
       <Grid container spacing={1}>
-         {Object.keys(data).map(k => { 
+         {Object.keys(data).slice(12, ).map(k => { 
          return(
          
             <Grid item xs={12} sm={6} md={4}>

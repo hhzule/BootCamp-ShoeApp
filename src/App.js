@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Routes, Route,} from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Women from './Components/Women';
 import Men from './Components/Men';
 import Kid from './Components/Kid';
@@ -8,6 +8,7 @@ import Checkout from './Components/Checkout';
 import ProductsW from './Components/ProductsW';
 import ProductsM from './Components/ProductsM';
 import ProductsK from './Components/ProductsK';
+import ProductsA from './Components/ProductsA';
 import MainPage from './Components/MainPage';
 import Pagenotfound from './Components/Pagenotfound';
 import AppBar from '@material-ui/core/AppBar';
@@ -62,7 +63,9 @@ function App() {
   </div>
 
 <Routes>
-<Route path='/' element={<MainPage/>}></Route>
+<Route path='/' element={<MainPage/>}>
+<Route path=":id" element={<ProductsA />}></Route>
+</Route>
 <Route path='womens' element={<Women/>}>
  
   <Route path=":id" element={<ProductsW />}></Route>

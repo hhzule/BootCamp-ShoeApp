@@ -219,3 +219,8 @@ height: 200px;
     margin: 10% 25% !important;
 
 }
+.buy{
+    align-items: center;
+    margin: 1% 40%;
+    padding: 5% 0;
+}

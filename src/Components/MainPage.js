@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Outlet } from 'react-router-dom';
 import data from './../data.json';
-import data1 from './../data1.json';
-import data2 from './../data2.json';
 import styles from './Women.module.css'
 import { makeStyles } from '@material-ui/core/styles';
 import { Card, Grid, CardActionArea, CardActions, Button, CardContent, CardMedia, Divider, Typography } from '@material-ui/core';
@@ -26,7 +24,9 @@ function MainPage(){
   const classes = useStyles();
   return(
     <>
-      <div><h1 className={styles.head}>WOMEN</h1></div>
+      <div>
+        <Outlet />
+        <h1 className={styles.head}>WOMEN</h1></div>
       <div className={classes.root2}>
       <Grid container spacing={1}>
          {Object.keys(data).slice(0, 3).map(k => { 
@@ -79,7 +79,7 @@ function MainPage(){
     <div><h1 className={styles.head}>MEN</h1></div>
       <div className={classes.root2}>
       <Grid container spacing={1}>
-         {Object.keys(data1).slice(0, 3).map(k => { 
+         {Object.keys(data).slice(6, 9).map(k => { 
          return(
          
             <Grid item xs={12} sm={6} md={4}>
@@ -93,13 +93,13 @@ function MainPage(){
           component="img"
           alt="Shoe Image"
           height="150"
-          image={data1[k].img}
+          image={data[k].img}
           title="Contemplative Reptile"
         />
          </Link>
          <CardContent>
          <Typography gutterBottom variant="h5" component="h2">
-         {data1[k].name}
+         {data[k].name}
           </Typography>
           </CardContent>
         </div>
@@ -128,7 +128,7 @@ function MainPage(){
 <div><h1 className={styles.head}>KIDS</h1></div>
       <div className={classes.root2}>
       <Grid container spacing={1}>
-         {Object.keys(data2).slice(0, 3).map(k => { 
+         {Object.keys(data).slice(12, 15).map(k => { 
          return(
          
             <Grid item xs={12} sm={6} md={4}>
@@ -142,13 +142,13 @@ function MainPage(){
           component="img"
           alt="Shoe Image"
           height="150"
-          image={data2[k].img}
+          image={data[k].img}
           title="Contemplative Reptile"
         />
          </Link>
          <CardContent>
          <Typography gutterBottom variant="h5" component="h2">
-         {data2[k].name}
+         {data[k].name}
           </Typography>
           </CardContent>
         </div>

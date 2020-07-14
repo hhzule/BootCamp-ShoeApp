@@ -29,7 +29,7 @@ function Women(){
     
     <div className={classes.root2}>
       <Grid container spacing={1}>
-         {Object.keys(data).map(k => { 
+         {Object.keys(data).slice(0, 6).map(k => { 
          return(
          
             <Grid item xs={12} sm={6} md={4}>
