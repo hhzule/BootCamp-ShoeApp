@@ -17,6 +17,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import { Link } from 'react-router-dom';
 import styles from './Components/Women.module.css';
+import { Grid } from '@material-ui/core';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -33,7 +34,7 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    alignSelf: 'flex-end',
+    alignSelf: 'center',
     fontWeight: 'bolder',
   },
 }));
@@ -44,22 +45,46 @@ function App() {
   return (
    <>
  <div >
+ <Grid>
+ <Grid item xs={12} sm={12} md={12}>
     <AppBar position="static">
       <Toolbar className={styles.outerdiv}>
         <Typography className={classes.title} variant="h2" noWrap>
           Shoe Zone
         </Typography>
-<div>
-<Typography className={classes.title} variant="h5" noWrap>
-<Link to='/'>Home</Link>
-<Link to='mens'>Mens</Link>
-<Link to='/womens'>Womens</Link>
-<Link to='/kids'>Kids</Link>
-<Link to='/checkout'>Checkout</Link>
-        </Typography>
-</div>
       </Toolbar>
     </AppBar>
+   
+    <AppBar position="static">
+      <Toolbar className={styles.outerdiv}>
+     
+   
+    
+     
+<Typography className={classes.title} variant="h5" noWrap>
+<Grid item xs={12} sm={4}> 
+<Link to='/'>Home</Link>
+</Grid>
+<Grid item xs={12} sm={4} >
+<Link to='mens'>Mens</Link>
+</Grid>
+<Grid item xs={12} sm={4} >
+<Link to='/womens'>Womens</Link>
+</Grid>
+<Grid item xs={12} sm={4} >
+<Link to='/kids'>Kids</Link>
+</Grid>
+<Grid item xs={12} sm={4} >
+<Link to='/checkout'>Checkout</Link>
+</Grid>
+        </Typography>
+
+</Toolbar>
+    </AppBar>
+
+        </Grid>
+     
+</Grid>
   </div>
 
 <Routes>

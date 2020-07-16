@@ -1,24 +1,35 @@
 .outerdiv1{
-    width: 200px;
+
     height: 150px;
     background-image: linear-gradient(to right top, #f0a1ce, #eb95db, #dfb2ec, #ccb5f3, #b5b5f0, #8aa7ec, #79b3f4, #88c7f1, #95d8f0, #a0dde9, #46eefa, #5ffbf1);
     /* background: linear-gradient(90deg, #FF6F91, #F9F871); */
     border-radius: 5%;
     padding-left: 10px;
-}
+    margin: 0 auto !important;
 
+}
+.MuiGrid-root{
+width: 300% !important;
+}
+.MuiGrid-root, .MuiGrid-item, .MuiGrid-grid-xs-12, .MuiGrid-grid-sm-6, .MuiGrid-grid-md-4{
+    margin: 0px 0px 0px 0px !important;
+}
+.menu, .title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 img{
     width: 100%;
     border-radius: 10%;
     /* padding-right: 100px; */
-
     
 }
 .color{
     background: linear-gradient(90deg, #b994f5, #e97ac7, #ee95aa, #f3ad93, #f3d294, #f3f38c);
 }
 .outerdiv{
-
+width: 100%;
 height: 200px;
     align-items: 'flex-start';
     /* paddingTop: theme.spacing(1),
