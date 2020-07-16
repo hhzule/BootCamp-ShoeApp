@@ -213,12 +213,13 @@ height: 200px;
 
 }
 .product{
+    width: 40%;
     margin: 10% 25% !important;
 
 }
 .buy{
-    align-items: center;
-    margin: 1% 40%;
+    align-items: center !important;
+    margin: 0 auto;
     padding: 5% 0;
 }
 .maindiv12{
