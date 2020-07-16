@@ -37,8 +37,9 @@ function Kid(){
           <CardActionArea>
           
           <div className={styles.main}>
+          <Link to={k}>
          <div key={k} className={styles.maindiv1}>
-           <Link to={k}>
+         
             <CardMedia
           component="img"
           alt="Shoe Image"
@@ -46,7 +47,6 @@ function Kid(){
           image={data[k].img}
           title="Contemplative Reptile"
         />
-         </Link>
         
         </div>
         <div className={styles.textdiv}  >
@@ -66,7 +66,8 @@ function Kid(){
         </Button>
       </CardActions>
         </div>
-         
+        </Link>
+        
   </div>
   </CardActionArea>  
     </Card>
