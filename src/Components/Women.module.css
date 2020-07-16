@@ -9,9 +9,9 @@
 
 img{
     width: 100%;
-
     border-radius: 10%;
-    padding-right: 100px;
+    /* padding-right: 100px; */
+
     
 }
 .color{
@@ -54,9 +54,9 @@ height: 200px;
     text-align: center;
     background-size: 200% !important;
     background: linear-gradient(90deg, #f77794, #faa282 );
-    width: 300px;
-    padding-right: 100px;
-    padding-left: 35px;
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
     padding-top: 50px;
     padding-bottom: 35px;
     margin: 1px 5px;
@@ -110,22 +110,12 @@ height: 200px;
 
 
 
-.maindiv1:hover, .maindiv1a:hover, .maindiv1b:hover{
+.maindiv1:hover, .maindiv1a:hover, .maindiv1b:hover, .maindiv12{
     transition: ease-in;
     animation: backgroundani 0.5s infinite !important;
 }
 
-@keyframes backgroundani{
-    0%{
-        background-position: 0% 0%;
-    }
-    50%{
-        background-position: 100% 100%; 
-    }
-    100%{
-        background-position: 0% 0%;
-    }
-}
+
 .main{
     display:flex;
     flex-direction: row;
@@ -150,8 +140,10 @@ height: 200px;
     padding: 50px;
 } */
 .maindiv1 img{
-    width: 190px;
+    width: 100%;
     height: 190px;
+    position: relative;
+    margin: 0 auto
 }
 .head{
     color: rgb(100, 98, 98);
@@ -167,7 +159,9 @@ height: 200px;
     text-align: center;
 }
 .checkout{
-    background-color: rgba(0, 0, 0, 0.349) !important;
+    font-size: larger;
+    font-weight: bolder;
+    background-size: 400% !important;
     color: white;
     margin: 0 auto;
     text-align: center;
@@ -175,9 +169,12 @@ height: 200px;
     padding-top: 0px;
     padding-bottom: 50px;
     margin-bottom: 120px;
+    background: linear-gradient(90deg, #b796ec, #ee8dd1, #f195aa, #f3ac92, #f3cf8b, #f7f79d);
+    animation: backgroundani 5s infinite;
+
 }
 .checkout *{
-    color: white;
+    color: white !important;
     padding-top: 70px;
     margin: 0 auto;
     text-align: center;
@@ -223,4 +220,52 @@ height: 200px;
     align-items: center;
     margin: 1% 40%;
     padding: 5% 0;
+}
+.maindiv12{
+    text-align: center;
+    background-size: 200% !important;
+    background: linear-gradient(90deg, #f77794, #faa282 );
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    margin: 1px 5px;
+    animation: backgroundani 2s infinite;
+    border-radius: 10px;
+    display: flex;
+    /* display: flex;
+    flex-direction: row;
+    position: relative; */
+    transition: ease-in;
+}
+.maindiv12 h2{
+    color: white;
+
+    filter: opacity(50%);
+    font-size: 30px !important;
+}
+/* .maindiv1{
+    padding: 10px;
+    width: 200%;
+    height: 200%;
+    padding: 50px;
+} */
+.maindiv12 img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+    
+}
+@keyframes backgroundani{
+    0%{
+        background-position: 0% 0%;
+    }
+    50%{
+        background-position: 100% 100%; 
+    }
+    100%{
+        background-position: 0% 0%;
+    }
 }

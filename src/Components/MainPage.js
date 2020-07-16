@@ -37,7 +37,7 @@ function MainPage(){
           <CardActionArea>
           
           <div className={styles.main}>
-         <div key={k} className={styles.maindiv1}>
+         <div key={k} className={styles.maindiv12}>
            <Link to={k}>
             <CardMedia
           component="img"
@@ -55,9 +55,8 @@ function MainPage(){
          {data[k].name}
           </Typography>
           </CardContent>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="h4" color="textSecondary" >
+         {data[k].price}
           </Typography>
           <Divider/>
           <CardActions>
@@ -77,17 +76,17 @@ function MainPage(){
 </div>
   
     <div><h1 className={styles.head}>MEN</h1></div>
-      <div className={classes.root2}>
+    <div className={classes.root2}>
       <Grid container spacing={1}>
          {Object.keys(data).slice(6, 9).map(k => { 
          return(
          
             <Grid item xs={12} sm={6} md={4}>
-          <Card className={classes.root}>
+          <Card className={classes.root}elevation={4} >
           <CardActionArea>
           
           <div className={styles.main}>
-         <div key={k} className={styles.maindiv1a}>
+         <div key={k} className={styles.maindiv1}>
            <Link to={k}>
             <CardMedia
           component="img"
@@ -97,16 +96,16 @@ function MainPage(){
           title="Contemplative Reptile"
         />
          </Link>
-         <CardContent>
+        
+        </div>
+        <div className={styles.textdiv}  >
+        <CardContent>
          <Typography gutterBottom variant="h5" component="h2">
          {data[k].name}
           </Typography>
           </CardContent>
-        </div>
-        <div className={styles.textdiv}  >
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="h4" color="textSecondary" >
+          {data[k].price}
           </Typography>
           <Divider/>
           <CardActions>
@@ -124,19 +123,18 @@ function MainPage(){
    
 )})} </Grid>
 </div>
-  
 <div><h1 className={styles.head}>KIDS</h1></div>
-      <div className={classes.root2}>
+<div className={classes.root2}>
       <Grid container spacing={1}>
          {Object.keys(data).slice(12, 15).map(k => { 
          return(
          
             <Grid item xs={12} sm={6} md={4}>
-          <Card className={classes.root}>
+          <Card className={classes.root}elevation={4} >
           <CardActionArea>
           
           <div className={styles.main}>
-         <div key={k} className={styles.maindiv1b}>
+         <div key={k} className={styles.maindiv1}>
            <Link to={k}>
             <CardMedia
           component="img"
@@ -146,16 +144,16 @@ function MainPage(){
           title="Contemplative Reptile"
         />
          </Link>
-         <CardContent>
+        
+        </div>
+        <div className={styles.textdiv}  >
+        <CardContent>
          <Typography gutterBottom variant="h5" component="h2">
          {data[k].name}
           </Typography>
           </CardContent>
-        </div>
-        <div className={styles.textdiv}  >
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+          <Typography variant="h4" color="textSecondary" >
+          {data[k].price}
           </Typography>
           <Divider/>
           <CardActions>
